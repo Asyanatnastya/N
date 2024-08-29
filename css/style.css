@@ -108,6 +108,18 @@ nav .last{
     top: calc(100% + 5px);
     width:max-content
 }   
+.services{
+    position: relative;
+
+}
+.services::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    left: 0;
+}
 .wrap{
     background: #d2d4d5;
     border-right: 1px #b9bdc1 solid;
@@ -365,9 +377,12 @@ td {
     font-size: 17px;
     border: 1rem #c0c1c2 solid;
     transition: .3s;
-}
-td:first-child{
+    text-align: center;
     border-left: none;
+}
+td:first{
+    border-left: none;
+    text-align: center;
 }
 td:last-child{
     border-right: none;
@@ -478,7 +493,7 @@ td.numbers {
 
 .td.first {
     width: 7%;
-    text-align: center;
+    text-align: left;
 }
 
 .td.initials {
